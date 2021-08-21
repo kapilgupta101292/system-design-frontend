@@ -55,6 +55,9 @@ export const SubMenu = ({ item }) => {
                 <div>
                     {item.subNav && (subnav ? item.iconOpened: item.iconClosed)}
                 </div>
+
+
+            </SidebarLink>
                 {subnav && item.subNav.map((item, index) => {
                     return (
                         <DropdownLink to={item.path} key={index}>
@@ -63,8 +66,6 @@ export const SubMenu = ({ item }) => {
                         </DropdownLink>
                     )
                 })}
-
-            </SidebarLink>
             
         </div>
     )
